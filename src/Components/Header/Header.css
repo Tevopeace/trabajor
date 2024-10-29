@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence:wght@400;700&display=swap');
+
+.container {
+    width: 100%;
+    padding: 0; /* Elimina el padding para que el encabezado se extienda completamente */
+    margin: 0; /* Asegúrate de que no haya margen */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre logo y navbar */
+    padding: 10px 5px; /* Reduce el padding general del header */
+    background-color: #330323; /* Color de fondo del header */
+    color: #ffffff; /* Color del texto en el header */
+    position: fixed; /* Mantiene el header en la parte superior */
+    top: 0; /* Alinea el header en la parte superior */
+    left: 0; /* Asegúrate de que cubra todo el ancho */
+    width: 100%; /* Asegúrate de que el header cubra todo el ancho */
+    z-index: 1000; /* Asegúrate de que el header esté por encima de otros elementos */
+    font-family: 'Sixtyfour Convergence', sans-serif; /* Aplica la fuente Sixtyfour Convergence */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+}
+
+.logo-container {
+    display: flex; /* Cambiado a flex para alinear el logo y el texto */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+.logo {
+    height: 25px; /* Reduce la altura del logo para hacerlo más pequeño */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.logo-text {
+    margin-left: 5px; /* Espacio entre el logo y el texto */
+    color: #ffffff; /* Asegúrate de que el color del texto sea blanco */
+    font-size: 16px; /* Reduce el tamaño de la fuente */
+}
+
+.header a {
+    color: #ffffff; /* Color de los enlaces en el header */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 4px; /* Reduce el padding de los enlaces */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    position: relative; /* Necesario para el posicionamiento del ::after */
+    transition: color 0.3s ease, transform 0.3s ease; /* Añade transición para el color y transformación */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto de luz blanca */
+}
+
+/* Efecto hover */
+.header a:hover {
+    color: #23a9ca; /* Color al pasar el mouse sobre los enlaces */
+    transform: scale(1.1); /* Aumenta el tamaño del enlace al pasar el mouse */
+    text-shadow: 0 0 5px #23a9ca, 0 0 10px #23a9ca, 0 0 20px #23a9ca; /* Efecto de neón azul */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+        padding: 8px 5px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .logo-container {
+        margin-bottom: 5px; /* Espacio entre el logo y el navbar */
+    }
+
+    .logo-text {
+        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .header a {
+        padding: 2px; /* Reduce aún más el padding de los enlaces en pantallas pequeñas */
+        font-size: 12px; /* Reduce el tamaño de la fuente de los enlaces */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 20px; /* Reduce la altura del logo en pantallas muy pequeñas */
+    }
+
+    .logo-text {
+        font-size: 12px; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .header a {
+        font-size: 10px; /* Reduce el tamaño de la fuente de los enlaces en pantallas muy pequeñas */
+    }
+ }

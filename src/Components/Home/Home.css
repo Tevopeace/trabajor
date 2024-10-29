@@ -1,0 +1,70 @@
+.banner {
+    height: 900px; /* Altura del banner */
+    width: 100vw; /* Ancho completo de la ventana */
+    position: relative; /* Para que el contenido se posicione relativo al banner */
+    overflow: hidden; /* Para ocultar cualquier parte del contenido que sobresalga */
+}
+
+.banner-image {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 100%; /* Ajusta la altura a 100% para que se ajuste al contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    position: absolute; /* Permite que la imagen se coloque detrás del contenido */
+    top: 0; /* Alinea la imagen en la parte superior */
+    left: 0; /* Alinea la imagen a la izquierda */
+    z-index: 1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+.banner-container {
+    max-width: 1170px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    position: absolute; /* Para superponer el contenido sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición horizontal y verticalmente */
+    text-align: center; /* Centra el texto */
+    z-index: 2; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+.banner-title {
+    color: #ce3131; /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+    font-size: 60px; /* Tamaño de la fuente ajustado para mejor visualización */
+    line-height: 80px; /* Altura de línea para el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin: 0; /* Elimina el margen por defecto */
+    position: relative; /* Para el efecto de sombra */
+    z-index: 3; /* Asegura que el texto esté por encima del fondo */
+    text-shadow: 0 0 5px rgb(49, 162, 206), /* Sombra de texto para el efecto neón */
+                 0 0 10px rgb(39, 140, 199),
+                 0 0 15px rgb(37, 161, 192);
+}
+
+.banner-title:hover {
+    text-shadow: 0 0 10px rgb(109, 36, 36), /* Aumenta el efecto al pasar el mouse */
+                 0 0 20px rgb(90, 12, 12),
+                 0 0 30px rgb(65, 12, 12);
+}
+
+.shop-button {
+    background: linear-gradient(45deg, #be1dbe, #5516cc); /* Gradiente de color */
+    padding: 0; /* Elimina el padding para que el tamaño sea controlado por width y height */
+    font-size: 18px; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    width: 100px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+    border: 2px solid #ffffff; /* Borde blanco de 2px */
+    border-radius: 10%; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background 0.3s ease, border-color 0.3s ease; /* Transición suave para el color de fondo y borde */
+    margin-left: -200px; /* Ajusta este valor para mover el botón hacia la derecha */
+}
+
+.shop-button:hover {
+    background: linear-gradient(45deg, #5516cc, #405b7e); /* Gradiente invertido al pasar el ratón */
+    border-color: #ffcc00; /* Cambia el color del borde al pasar el ratón */
+}

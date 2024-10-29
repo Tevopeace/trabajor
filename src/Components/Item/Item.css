@@ -1,0 +1,45 @@
+/* Item.css */
+.item-container {
+    border: 1px solid #ccc; /* Borde alrededor del item */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo entre items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-image {
+    width: 250px; /* Ancho fijo para la imagen */
+    height: 270px; /* Altura fija para la imagen */
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el contenido que sobresalga se oculte */
+}
+
+.item-image img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+}
+
+.item-info {
+    text-align: center;
+}
+
+.item-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaciado debajo del nombre del producto */
+    text-decoration: none;
+    color: #2d3a4b;
+}
+
+.item-name:hover {
+    color: rgb(255, 225, 21);
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaciado debajo del precio */
+}

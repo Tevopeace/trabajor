@@ -1,0 +1,18 @@
+.item-list {
+    display: flex; /* Asegura que el contenedor es un flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra los elementos en el eje horizontal */
+    margin: 20px; /* Añade un margen alrededor del contenedor */
+}
+
+.item-list .item {
+    flex: 1 1 200px; /* Permite que los elementos tengan un ancho mínimo de 200px y crezcan según sea necesario */
+    margin: 10px; /* Añade un margen entre los elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para los elementos */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave para efectos */
+}
+
+.item-list .item:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}

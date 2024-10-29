@@ -1,0 +1,24 @@
+.nav-links {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    list-style-type: none; /* Eliminar puntos de lista */
+    padding: 0; /* Eliminar padding por defecto */
+    margin: 20px 0 0 0; /* Agregar un margen superior de 20px */
+}
+
+.nav-links li {
+    margin: 0 5px; /* Espaciado entre elementos */
+}
+
+.nav-links a {
+    font-size: 14px; /* Tamaño de texto */
+    font-weight: normal; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: rgb(45, 58, 75); /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.nav-links a:hover {
+    color: rgb(255, 225, 21); /* Color al pasar el ratón */
+}
