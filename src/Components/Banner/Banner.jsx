@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.css';
 
-const Banner = () => {
+const BannerT = () => {
     return (
         <div className="banner">
             <div className="banner-content">
@@ -13,4 +13,5 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default BannerT;
+/*Cambiado por otro componentes*/

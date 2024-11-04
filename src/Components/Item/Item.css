@@ -1,25 +1,25 @@
-/* Item.css */
 .item-container {
-    border: 1px solid #ccc; /* Borde alrededor del item */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    margin: 10px; /* Espaciado externo entre items */
+    border: 1px solid #5e0c69; /*Borde alrededor del item*/
+    border-radius: 10px; /*Bordes redondeados*/
+    padding: 10px; /*Espaciado interno*/
+    margin: 10px; /*Espaciado externo entre items*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 6;
 }
 
 .item-image {
-    width: 250px; /* Ancho fijo para la imagen */
-    height: 270px; /* Altura fija para la imagen */
+    width: 250px; /*Ancho para la imagen*/
+    height: 270px; /*Altura para la imagen*/
     border-radius: 8px;
-    overflow: hidden; /* Asegura que el contenido que sobresalga se oculte */
+    overflow: hidden; /*el contenido que sobresalga se oculte*/
 }
 
 .item-image img {
-    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
-    height: 100%; /* La imagen ocupa el 100% de la altura del contenedor */
-    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .item-info {
@@ -29,17 +29,23 @@
 .item-name {
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px; /* Espaciado debajo del nombre del producto */
+    margin-bottom: 10px; /*Espaciado debajo del nombre del producto*/
     text-decoration: none;
-    color: #2d3a4b;
+    color: #000000;
 }
 
 .item-name:hover {
-    color: rgb(255, 225, 21);
+    color: rgb(146, 16, 197);
 }
 
 .item-price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px; /* Espaciado debajo del precio */
+    margin-bottom: 10px; /*Espaciado debajo del precio*/
+    COLOR: #000000
+
+}
+
+.item-price:hover {
+    color: rgb(146, 16, 197);
 }

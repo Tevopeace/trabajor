@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import './Item.css'; // Importa el archivo CSS
+import './Item.css'; 
 
-export default function Item({ id, name, price, img }) {
+export default function Item({ id, name, price, img, category }) {
     return (
-        <div className="item-container"> {/* Contenedor para el item */}
+        <div className="item-container"> 
             <Link to={`/products/${id}`}>
-                <div className="item-image"> {/* Contenedor para la imagen */}
+                <div className="item-image"> 
                     <img src={img} alt="Imagen Productos" />
                 </div>
             </Link>
@@ -13,8 +13,9 @@ export default function Item({ id, name, price, img }) {
             <Link to={`/products/${id}`} className="item-name">
                 {name}
             </Link>
-
+            <p className="item-category">{category}</p>
             <h4 className="item-price">$ {price}</h4>
+            
         </div>
     );
 }

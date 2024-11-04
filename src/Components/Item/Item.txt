@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
+import './Item.css'; 
 
-export default function Item({id, name, price, img, img2}){
+export default function Item({ id, name, price, img, category }) {
+    return (
+        <div className="item-container"> 
+            <Link to={`/products/${id}`}>
+                <div className="item-image"> 
+                    <img src={img} alt="Imagen Productos" />
+                </div>
+            </Link>
 
-    return(
-        <div className="flex flex-col items-center my-[10px] mx-[10px]">
-            <Link to=""><img src={img} alt="Imagen Productos" /></Link>
-
-            <Link to="" className="text-[22px] font-bold my-[15px] tracking-[3px] uppercase text-[#2d3a4b] hover:text-[rgb(255,225,21)]">{name}</Link>
-
-            <h4 className="text-[18px] font-bold mb-[20px]">$ {price}</h4>
+            <Link to={`/products/${id}`} className="item-name">
+                {name}
+            </Link>
+            <p className="item-category">{category}</p>
+            <h4 className="item-price">$ {price}</h4>
+            
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
 import ItemList from "../ItemList/ItemList";
 
-export default function ProductPage(){
+export default function Products(){
 
     return(
         <div className="container mx-auto">

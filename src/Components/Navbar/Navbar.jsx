@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Asegúrate de crear este archivo CSS
+import './Navbar.css';
 
 export default function Navbar() {
     return (
@@ -16,6 +16,15 @@ export default function Navbar() {
                 </li>
                 <li>
                     <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                    <Link to="/Category/Ps4">Ps4</Link>
+                </li>
+                <li>
+                    <Link to="/Category/Xbox">Xbox</Link>
+                </li>
+                <li>
+                    <Link to="/Category/Pc">Pc</Link>
                 </li>
             </ul>
         </nav>
